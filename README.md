@@ -1,4 +1,6 @@
-Overview
+Blockchain and Gen AI-Driven Virtual Therapy Sessions in the Metaverse 
+
+
 This repository contains the full source code and smart contracts for a virtual therapy system built in the Metaverse, using blockchain, decentralized storage, and AI-powered non-player characters (NPCs). The project aims to provide users with immersive, real-time therapy sessions powered by AI, ensuring secure access control and privacy through the integration of NFTs and decentralized storage.
 
 Key Features:
