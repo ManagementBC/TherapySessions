@@ -1,60 +1,84 @@
-Blockchain and Gen AI-Driven Virtual Therapy Sessions in the Metaverse 
+Blockchain and Gen AI-Driven Virtual Therapy Sessions in the Metaverse
+This repository contains the source code, smart contracts, and setup instructions for a virtual therapy system built in the Metaverse. It integrates blockchain, decentralized storage, and AI-powered non-player characters (NPCs) to deliver immersive, real-time therapy sessions while ensuring secure access control and privacy through NFTs and IPFS.
+
+📌 Note on Full Project Download
+⚠️ Due to size limitations, the complete Unity project with all assets cannot be stored directly on GitHub.
+To download the full project (including large Unity assets, builds, and additional resources), please use the following link:
+https://drive.google.com/drive/folders/1bJhn1yCrUMsGgnEdCkTFWx6LqvhE-Qbk?usp=drive_link
 
 
-This repository contains the full source code and smart contracts for a virtual therapy system built in the Metaverse, using blockchain, decentralized storage, and AI-powered non-player characters (NPCs). The project aims to provide users with immersive, real-time therapy sessions powered by AI, ensuring secure access control and privacy through the integration of NFTs and decentralized storage.
 
-Key Features:
+Please follow the instructions below for setting up the project after downloading the full package.
 
-AI-Driven NPCs: AI-powered therapists deliver personalized mental health support during virtual therapy sessions.
-Blockchain Integration: Smart contracts manage user access and session data storage.
-NFT-Based Access Control: Users must hold a valid NFT to access therapy sessions.
-Decentralized Storage: Therapy session data is securely stored using IPFS, ensuring immutability and transparency.
-Unity 3D Metaverse Environment: Users interact with the system in a park-like Metaverse environment designed for relaxation and immersive therapy experiences.
+🔑 Key Features
+AI-Driven NPCs: AI-powered virtual therapists deliver personalized mental health support in immersive sessions.
 
-Repository Structure
-This repository is divided into two main sections:
+Blockchain Integration: Ethereum smart contracts manage user access and session data securely.
 
-1. Unity 3D Projects
-   
+NFT-Based Access Control: Only users holding a valid NFT can join therapy sessions.
+
+Decentralized Storage: Therapy session data is stored immutably on IPFS.
+
+Unity 3D Metaverse Environment: Park-like virtual world designed for relaxation and therapy.
+
+📂 Repository Structure
+This GitHub repository is organized into the following main sections:
+
+1️⃣ Unity 3D Projects
 Folder 1: WebGL Build (No Voice Recognition)
-This folder contains the Unity 3D code without voice recognition, designed to be built and run using WebGL for deployment on the web.
+
+Unity 3D project for WebGL deployment (without voice recognition).
+
+Suitable for browser-based use.
 
 Folder 2: Local Build with Voice Recognition
-This folder includes the same Unity 3D project, but with the addition of Microsoft Azure-based voice recognition functionality. Since Azure's speech recognition is not compatible with WebGL, this version is for local builds only.
 
-2. Smart Contracts
+Unity 3D project with integrated Microsoft Azure voice recognition.
 
-The smart contracts for NFT-based access control and session management are located in this folder. These contracts are written in Solidity, deployed on the Sepolia Ethereum test network, and verified on Etherscan. The folder includes:
+Designed for local desktop builds only (Azure Speech not supported in WebGL).
 
-UAC.sol: Manages the minting of NFTs for users.
+2️⃣ Smart Contracts
+Located in the Smart Contracts folder:
 
-Management.sol: Handles user registration, session data storage, and access control.
+UAC.sol: Manages NFT minting for access control.
 
-Installation and Setup
+Management.sol: Handles user registration, session data storage, and access verification.
 
-Prerequisites:
+Contracts are written in Solidity, deployed on the Sepolia Ethereum test network, and verified on Etherscan.
 
-Unity 3D: Download Unity (Version 2021.3.x or higher recommended).
+⚙️ Installation and Setup
+Prerequisites
+Unity 3D: Version 2021.3.x or higher recommended.
 
-Ethereum Wallet (e.g., MetaMask): Required for interacting with the smart contracts.
+Ethereum Wallet (e.g., MetaMask): For interacting with the smart contracts.
 
-Microsoft Azure Account: Required for voice recognition in Folder 2 (Local Build).
+Microsoft Azure Account: Required for voice recognition in the Local Build version.
 
-Unity 3D Setup:
+Unity 3D Setup
+Download the full project from the provided external link.
 
-Clone the repository.
+Unpack the project folders locally.
 
-Open the respective Unity 3D project folder in the Unity Editor.
+Open the relevant Unity project in the Unity Editor:
 
-For Folder 1 (WebGL Build): Switch the build platform to WebGL and build the project.
+Folder 1 (WebGL Build):
 
-For Folder 2 (Local Build): Set up the necessary Microsoft Azure speech services and run the project locally.
+Switch build platform to WebGL.
 
-Smart Contracts Setup:
+Build and deploy on the web.
 
-Open the Smart Contracts folder.
+Folder 2 (Local Build):
 
-Deploy the contracts using Remix IDE to the Sepolia Test Network.
+Configure Microsoft Azure Speech services.
+
+Build and run locally.
+
+Smart Contracts Setup
+Navigate to the Smart Contracts folder.
+
+Open the contracts in Remix IDE.
+
+Deploy to the Sepolia Test Network.
 
 Interact with the contracts using MetaMask or another compatible Ethereum wallet.
 
